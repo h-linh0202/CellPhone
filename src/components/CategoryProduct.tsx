@@ -107,11 +107,11 @@ const CategoryProduct: React.FC<CategoryProductProps> = ({
     <div className="bg-white shadow-lg rounded-lg p-6">
       {/* Tiêu đề danh mục */}
       <h2 className="text-2xl font-bold text-gray-800 mb-6">
-        Sản phẩm {categoryName ? `- ${categoryName.replace(/([A-Z])/g, ' $1').trim()}` : ''}
+        Sản phẩms  {categoryName ? `- ${categoryName.replace(/([A-Z])/g, ' $1').trim()}` : ''}
       </h2>
 
       {/* Lưới hiển thị sản phẩm */}
-      <div className="grid grid-cols-5 gap-4">
+       <div className="grid grid-cols-5 gap-4">
         {processedProducts.map((product, index) => (
           <div
             key={index}
@@ -171,6 +171,7 @@ const CategoryProduct: React.FC<CategoryProductProps> = ({
           </div>
         ))}
       </div>
+
     </div>
   );
 };

@@ -64,7 +64,7 @@ const Header = () => {
                 }
               >Sản phẩm</NavLink>
               <NavLink
-                to="#"
+                to="/admin/products"
                 className={({ isActive }) =>
                   `text-sm ${isActive ? 'text-blue-600 font-medium' : 'text-gray-700 hover:text-blue-600'}`
                 }
